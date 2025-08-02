@@ -15,7 +15,7 @@ export default function EventsSection() {
       title: "Infinity Quest",
       subtitle: "(MATHS OLYMPIAD)",
       tagline: "Where Genius Meets Numbers!",
-      image: "../client/photos/infinity.png", // Replace with actual image link
+      image: "../photos/infinity.png", // Replace with actual image link
       alt: "Math Olympiad",
       rules: [
         "Individual event",
