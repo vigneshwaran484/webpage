@@ -59,7 +59,7 @@ export default function RulesSection() {
                     </p>
                   </div>
                   <a
-                    href="https://sympo.stjosephs-engg.cc/"
+                    href="https://forms.gle/W15XosJ5qzrWvwKG8/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors transform hover:scale-105"

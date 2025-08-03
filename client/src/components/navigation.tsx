@@ -54,7 +54,7 @@ export default function Navigation() {
                 Contact
               </button>
               <a 
-                href="https://sympo.stjosephs-engg.cc/" 
+                href="https://forms.gle/W15XosJ5qzrWvwKG8" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
