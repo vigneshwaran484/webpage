@@ -30,7 +30,7 @@ export default function Home() {
             <h3 className="font-display font-bold text-3xl text-white mb-6">Join JetSigma25</h3>
             <p className="text-xl text-blue-100 mb-8">Mathematics Symposium</p>
             <a 
-              href="https://sympo.stjosephs-engg.cc/" 
+              href="https://forms.gle/W15XosJ5qzrWvwKG8" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-primary font-bold px-12 py-4 rounded-lg text-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
