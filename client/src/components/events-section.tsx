@@ -15,7 +15,7 @@ export default function EventsSection() {
       title: "Infinity Quest",
       subtitle: "(MATHS OLYMPIAD)",
       tagline: "Where Genius Meets Numbers!",
-      image: "../photos/infinity.png", // Replace with actual image link
+      image: "/photos/infinity.png", // Replace with actual image link
       alt: "Math Olympiad",
       rules: [
         "Individual event",
@@ -29,7 +29,7 @@ export default function EventsSection() {
       title: "Bit Battle",
       subtitle: "(Math Fun)",
       tagline: "Unravel the Mystery of Numbers!",
-      image: "../photos/second.png", // Replace with actual image link
+      image: "/photos/second.png", // Replace with actual image link
       alt: "Math Puzzles",
       rules: [
         "Two participants per team",
@@ -41,7 +41,7 @@ export default function EventsSection() {
       title: "Sigma Grid",
       subtitle: "(Crossword)",
       tagline: "Discover the Joy in Every Number!",
-      image: "../photos/third.png",
+      image: "/photos/third.png",
       alt: "Math Fun",
       rules: [
         "Two participants per team",
@@ -53,7 +53,7 @@ export default function EventsSection() {
       title: "Math Rumble",
       subtitle: "(Math Puzzles)",
       tagline: "Prove Your Prowess with Numbers!",
-      image: "../photos/four.png",
+      image: "/photos/four.png",
       alt: "Math Quiz",
       rules: [
         "Two participants per team",
@@ -65,7 +65,7 @@ export default function EventsSection() {
       title: "Neuro Numerics",
       subtitle: "(Math Quiz)",
       tagline: "Crack the Clues, Conquer the Math Grid!",
-      image: "../photos/five.png",
+      image: "/photos/five.png",
       alt: "Math Crossword",
       rules: [
         "Two participants per team",
