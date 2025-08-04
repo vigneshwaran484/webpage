@@ -88,7 +88,7 @@ export default function HeroCarousel() {
 							{carouselSlides[currentSlide].department}
 						</p>
 						{/* Add the event date below the department */}
-						<p className="text-gray-300 mt-4">17 September 2025</p>
+						<p className="text-gray-300 mt-4">13 September 2025</p>
 					</div>
 				</div>
 			</div>
