@@ -9,7 +9,7 @@ export default function CountdownTimer() {
   });
 
   useEffect(() => {
-    const targetDate = new Date('September 17, 2025 00:00:00').getTime();
+    const targetDate = new Date('September 13, 2025 00:00:00').getTime();
     
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -68,7 +68,7 @@ export default function CountdownTimer() {
             <h4 className="font-display font-semibold text-lg text-blue-300 mb-2">
               <i className="fas fa-calendar mr-2"></i>Date
             </h4>
-            <p className="text-gray-300">17 September 2025</p>
+            <p className="text-gray-300">13 September 2025</p>
           </div>
           <div className="bg-slate-800/30 p-6 rounded-xl">
             <h4 className="font-display font-semibold text-lg text-blue-300 mb-2">

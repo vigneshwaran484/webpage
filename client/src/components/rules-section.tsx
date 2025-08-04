@@ -55,7 +55,7 @@ export default function RulesSection() {
                   <div className="text-center mb-6">
                     <p className="text-lg text-blue-100 mb-2">Event Date:</p>
                     <p className="font-display font-bold text-3xl text-white">
-                      Wednesday, 17th SEPTEMBER 2025
+                      Wednesday, 13th SEPTEMBER 2025
                     </p>
                   </div>
                   <a
