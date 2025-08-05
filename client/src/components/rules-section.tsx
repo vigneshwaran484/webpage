@@ -8,97 +8,85 @@ export default function RulesSection() {
 
         <div className="space-y-8">
           {/* Rules & Guidelines Section */}
-          <div className="bg-slate-800 p-8 rounded-xl border border-slate-600">
-            
-            <div className="space-y-8">
-              {/* Registration Rules */}
-              <div>
-                <h3 className="font-semibold text-xl text-blue-300 mb-4">Registration Rules</h3>
-                <ul className="text-gray-300 space-y-3 pl-5 list-disc">
-                  <li>Students have to register only through online and confirmation mail will be sent to the participants.</li>
-                  <li>No on-spot registrations will be allowed.</li>
-                  <li>All participants must bring their college ID cards.</li>
-                  <li>Only students from the same college can form teams.</li>
-                </ul>
-              </div>
+          <div className="bg-slate-800 p-8 rounded-xl border border-slate-600 space-y-8">
 
-              
+            {/* Registration Rules */}
+            <div>
+              <h3 className="font-semibold text-xl text-blue-300 mb-4">Registration Rules</h3>
+              <ul className="text-gray-300 space-y-3 pl-5 list-disc">
+                <li>Students have to register only through online and confirmation mail will be sent to the participants.</li>
+                <li>No on-spot registrations will be allowed.</li>
+                <li>All participants must bring their college ID cards.</li>
+                <li>Only students from the same college can form teams.</li>
+              </ul>
+            </div>
 
-              {/* Campus Guidelines */}
-              <div>
-                <h3 className="font-semibold text-xl text-blue-300 mb-4">Campus Guidelines</h3>
-                <ul className="text-gray-300 space-y-3 pl-5 list-disc">
-                  <li>Participants are permitted to enter the campus only in formal dress code.</li>
-                  <li>Participants will be allowed to enter only with printout of the confirmation printout up to 9am.</li>
-                  <li>Cell phones are not allowed inside the college campus.</li>
-                  <li>Breakfast and lunch will be provided by the college.</li>
-                </ul>
-              </div>
+            {/* Campus Guidelines */}
+            <div>
+              <h3 className="font-semibold text-xl text-blue-300 mb-4">Campus Guidelines</h3>
+              <ul className="text-gray-300 space-y-3 pl-5 list-disc">
+                <li>Participants are permitted to enter the campus only in formal dress code.</li>
+                <li>Participants will be allowed to enter only with printout of the confirmation printout up to 9am.</li>
+                <li>Cell phones are not allowed inside the college campus.</li>
+                <li>Breakfast and lunch will be provided by the college.</li>
+              </ul>
+            </div>
 
-              {/* General Rules */}
-              <div>
-                <h3 className="font-semibold text-xl text-blue-300 mb-4">General Rules</h3>
-                <ul className="text-gray-300 space-y-3 pl-5 list-disc">
-                  <li>College buses are available in all routes in and around the Chennai.</li>
-                  <li>Proper decorum must be maintained in accordance with the college rules in the college premises.</li>
-                  <li>Judges' decision is final.</li>
-                </ul>
-              </div>
+            {/* General Rules */}
+            <div>
+              <h3 className="font-semibold text-xl text-blue-300 mb-4">General Rules</h3>
+              <ul className="text-gray-300 space-y-3 pl-5 list-disc">
+                <li>College buses are available in all routes in and around the Chennai.</li>
+                <li>Proper decorum must be maintained in accordance with the college rules in the college premises.</li>
+                <li>Judges' decision is final.</li>
+              </ul>
             </div>
           </div>
-{/* Important Dates Section */}
-{/* Registration Date */}
-            <div className="mb-6">
+
+          {/* Important Dates Section */}
+          <div className="bg-gradient-to-br from-blue-600 to-blue-800 p-8 rounded-xl border border-blue-500 space-y-6">
+            <h3 className="font-display font-semibold text-2xl text-white text-center">Important Dates</h3>
+
+            <div className="text-center">
               <p className="text-xl text-cyan-300 mb-1">Registration Closing</p>
               <p className="text-3xl font-bold text-white">
                 <span className="text-cyan-400">10-09-2025</span>
               </p>
             </div>
-            
-            {/* Selection Intimation Date */}
-            <div className="mb-6">
-              <p className="text-xl text-cyan-300 mb-1">confirmation mail sent to participant</p>
+
+            <div className="text-center">
+              <p className="text-xl text-cyan-300 mb-1">Confirmation mail sent to participant</p>
               <p className="text-3xl font-bold text-white">
                 <span className="text-cyan-400">11-09-2025</span>
               </p>
               <p className="text-sm text-cyan-200 mt-1">(Only through e-mail)</p>
             </div>
-              <div className="bg-gradient-to-br from-blue-600 to-blue-800 p-8 rounded-xl border border-blue-500">
-                <h3 className="font-display font-semibold text-2xl text-white mb-6 text-center">
-                  Important Dates
-                </h3>
-                <div className="flex flex-col items-center">
-                  <div className="text-center mb-6">
-                    <p className="text-lg text-blue-100 mb-2">Event Date:</p>
-                    <p className="font-display font-bold text-3xl text-white">
-                      Wednesday, 13th SEPTEMBER 2025
-                    </p>
-                  </div>
-                  <a
-                    href="https://forms.gle/W15XosJ5qzrWvwKG8/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors transform hover:scale-105"
-                  >
-                    Register Now
-                  </a>
-                </div>
-              </div>
-            <button  onClick={() => {
-              window.open('https://forms.gle/W15XosJ5qzrWvwKG8', '_blank');
-            }}className="bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-4 px-12 rounded-full text-xl shadow-lg hover:shadow-cyan-400/30 transition-all duration-300 transform hover:-translate-y-1">
-              REGISTER NOW
-            </button>
-          </div>
-        </div>
 
-          {/* Bus Routes Section */}
+            <div className="text-center">
+              <p className="text-lg text-blue-100 mb-2">Event Date:</p>
+              <p className="font-display font-bold text-3xl text-white">
+                Wednesday, 13th SEPTEMBER 2025
+              </p>
+            </div>
+
+            <div className="text-center">
+              <a
+                href="https://forms.gle/W15XosJ5qzrWvwKG8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors transform hover:scale-105"
+              >
+                Register Now
+              </a>
+            </div>
+          </div>
+
+          {/* Transportation - Bus Routes */}
           <div className="mt-12 bg-slate-700 p-8 rounded-xl border border-slate-600">
             <h3 className="font-display font-semibold text-2xl text-blue-300 mb-8 text-center">
               Transportation - Bus Routes
             </h3>
 
-            {/* Centered College Name */}
             <div className="flex justify-center mb-8">
               <div className="text-center p-4 bg-slate-800 rounded-lg w-fit">
                 <h4 className="font-semibold text-lg text-white">
@@ -107,7 +95,6 @@ export default function RulesSection() {
               </div>
             </div>
 
-            {/* Bus Routes Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center p-4 bg-slate-800 rounded-lg">
                 <h4 className="font-semibold text-white mb-3">From CMBT</h4>
@@ -130,7 +117,6 @@ export default function RulesSection() {
               </div>
             </div>
 
-            {/* Footer Link */}
             <div className="text-center mt-8">
               <p className="text-gray-300 mb-3">Click the link to know about all bus routes</p>
               <a
