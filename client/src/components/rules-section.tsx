@@ -102,7 +102,7 @@ export default function RulesSection() {
               </div>
 
               <div className="text-center p-4 bg-slate-800 rounded-lg">
-                <h4 className="font-semibold text-white mb-3">From Adyar</h4>
+                <h4 className="font-semibold text-white mb-3">From Adyr</h4>
                 <p className="text-blue-300 font-mono text-lg">19B, 21H</p>
               </div>
 
