@@ -129,34 +129,64 @@ export default function RulesSection() {
               </a>
             </div>
           </div>
-        </div>
-      </div>
-      {/* Contact Details Section */}
+          {/* Contact Details Section */}
 <div className="mt-12 bg-slate-700 p-8 rounded-xl border border-slate-600">
-  <h3 className="font-display font-semibold text-2xl text-blue-300 mb-8 text-center">
-    Contact Details
-  </h3>
-
-  {/* Organizers */}
-  <div className="mb-8">
-    <h4 className="text-xl font-semibold text-white mb-4">Organizers</h4>
-    <ul className="text-gray-300 space-y-2 pl-5 list-disc">
-      <li>Mr. S. Shakunth – 7871452052</li>
-      <li>Mr. A. Alagumanikanadan – 9003449592</li>
-      <li>Mr. P. Kanagarasu – 7806910299</li>
-    </ul>
+  <div className="flex items-center mb-6">
+    <div className="bg-cyan-300 text-white rounded-full p-3 mr-3">
+      📞
+    </div>
+    <h3 className="font-display font-semibold text-2xl text-white">Organizers</h3>
+  </div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+    <div className="bg-slate-800 p-4 rounded-lg">
+      <p className="text-white font-semibold">Mr. S. Shakunth</p>
+      <a href="tel:7871452052" className="text-cyan-400 hover:underline">7871452052</a>
+    </div>
+    <div className="bg-slate-800 p-4 rounded-lg">
+      <p className="text-white font-semibold">Mr. A. Alagumanikanadan</p>
+      <a href="tel:9003449592" className="text-cyan-400 hover:underline">9003449592</a>
+    </div>
+    <div className="bg-slate-800 p-4 rounded-lg">
+      <p className="text-white font-semibold">Mr. P. Kanagarasu</p>
+      <a href="tel:7806910299" className="text-cyan-400 hover:underline">7806910299</a>
+    </div>
   </div>
 
-  {/* Coordinators */}
-  <div>
-    <h4 className="text-xl font-semibold text-white mb-4">Coordinators</h4>
-    <ul className="text-gray-300 space-y-2 pl-5 list-disc">
-      <li>Dr. K. Suresh – 8344475333</li>
-      <li>Dr. P. Agilan – 9789643221</li>
-    </ul>
+  <div className="flex items-center mb-6">
+    <div className="bg-cyan-300 text-white rounded-full p-3 mr-3">
+      📞
+    </div>
+    <h3 className="font-display font-semibold text-2xl text-white">Coordinators</h3>
+  </div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 mb-8">
+    <div className="bg-slate-800 p-4 rounded-lg">
+      <p className="text-white font-semibold">Dr. K. Suresh</p>
+      <a href="tel:8344475333" className="text-cyan-400 hover:underline">8344475333</a>
+    </div>
+    <div className="bg-slate-800 p-4 rounded-lg">
+      <p className="text-white font-semibold">Dr. P. Agilan</p>
+      <a href="tel:9789643221" className="text-cyan-400 hover:underline">9789643221</a>
+    </div>
+  </div>
+
+  <hr className="border-slate-600 my-6" />
+
+  <div className="flex items-center justify-center space-x-3">
+    <div className="bg-cyan-300 text-white rounded-full p-3">
+      📧
+    </div>
+    <div className="text-center">
+      <p className="text-white font-semibold">e-Mail:</p>
+      <a href="mailto:josephslinguasympochrisalys@gmail.com" className="text-cyan-400 hover:underline">
+        josephslinguasympochrisalys@gmail.com
+      </a>
+    </div>
   </div>
 </div>
 
+        </div>
+      </div>
+      
     </section>
   );
 }
