@@ -47,6 +47,22 @@ export default function RulesSection() {
             </div>
           </div>
 {/* Important Dates Section */}
+{/* Registration Date */}
+            <div className="mb-6">
+              <p className="text-xl text-cyan-300 mb-1">Registration Closing</p>
+              <p className="text-3xl font-bold text-white">
+                <span className="text-cyan-400">10-09-2025</span>
+              </p>
+            </div>
+            
+            {/* Selection Intimation Date */}
+            <div className="mb-6">
+              <p className="text-xl text-cyan-300 mb-1">confirmation mail sent to participant</p>
+              <p className="text-3xl font-bold text-white">
+                <span className="text-cyan-400">11-09-2025</span>
+              </p>
+              <p className="text-sm text-cyan-200 mt-1">(Only through e-mail)</p>
+            </div>
               <div className="bg-gradient-to-br from-blue-600 to-blue-800 p-8 rounded-xl border border-blue-500">
                 <h3 className="font-display font-semibold text-2xl text-white mb-6 text-center">
                   Important Dates
@@ -68,6 +84,14 @@ export default function RulesSection() {
                   </a>
                 </div>
               </div>
+            <button  onClick={() => {
+              window.open('https://forms.gle/W15XosJ5qzrWvwKG8', '_blank');
+            }}className="bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-4 px-12 rounded-full text-xl shadow-lg hover:shadow-cyan-400/30 transition-all duration-300 transform hover:-translate-y-1">
+              REGISTER NOW
+            </button>
+          </div>
+        </div>
+
           {/* Bus Routes Section */}
           <div className="mt-12 bg-slate-700 p-8 rounded-xl border border-slate-600">
             <h3 className="font-display font-semibold text-2xl text-blue-300 mb-8 text-center">
