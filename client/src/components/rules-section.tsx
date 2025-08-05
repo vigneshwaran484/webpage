@@ -131,6 +131,32 @@ export default function RulesSection() {
           </div>
         </div>
       </div>
+      {/* Contact Details Section */}
+<div className="mt-12 bg-slate-700 p-8 rounded-xl border border-slate-600">
+  <h3 className="font-display font-semibold text-2xl text-blue-300 mb-8 text-center">
+    Contact Details
+  </h3>
+
+  {/* Organizers */}
+  <div className="mb-8">
+    <h4 className="text-xl font-semibold text-white mb-4">Organizers</h4>
+    <ul className="text-gray-300 space-y-2 pl-5 list-disc">
+      <li>Mr. S. Shakunth – 7871452052</li>
+      <li>Mr. A. Alagumanikanadan – 9003449592</li>
+      <li>Mr. P. Kanagarasu – 7806910299</li>
+    </ul>
+  </div>
+
+  {/* Coordinators */}
+  <div>
+    <h4 className="text-xl font-semibold text-white mb-4">Coordinators</h4>
+    <ul className="text-gray-300 space-y-2 pl-5 list-disc">
+      <li>Dr. K. Suresh – 8344475333</li>
+      <li>Dr. P. Agilan – 9789643221</li>
+    </ul>
+  </div>
+</div>
+
     </section>
   );
 }
