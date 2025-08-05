@@ -63,8 +63,8 @@ export default function Home() {
               <p className="text-gray-300 mb-2">St. Joseph's College of Engineering</p>
               <p className="text-gray-300 mb-2">OMR Chennai-119</p>
               <p className="text-gray-300 mb-2">Phone: 9080871672 / 8248823143</p>
-              <p className="text-gray-300 mb-2">Email: jetsigma24@gmail.com</p>
-              <p className="text-gray-300">September 17, 2025</p>
+              <p className="text-gray-300 mb-2">Email: mathssjce@gmail.com</p>
+              <p className="text-gray-300">September 13, 2025</p>
             </div>
           </div>
           <div className="border-t border-slate-700 mt-8 pt-8 text-center">
