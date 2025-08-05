@@ -175,12 +175,6 @@ export default function RulesSection() {
     <div className="bg-cyan-300 text-white rounded-full p-3">
       📧
     </div>
-    <div className="text-center">
-      <p className="text-white font-semibold">e-Mail:</p>
-      <a href="mailto:josephslinguasympochrisalys@gmail.com" className="text-cyan-400 hover:underline">
-        josephslinguasympochrisalys@gmail.com
-      </a>
-    </div>
   </div>
 </div>
 
