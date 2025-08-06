@@ -1,8 +1,8 @@
-# JetSigma25 - Mathematics Symposium Website
+# Crisalys Literary Symposium Platform
 
 ## Overview
 
-This is a full-stack web application for JetSigma25, a Mathematics Symposium organized by the Department of Mathematics at St. Joseph's College of Engineering. The application is built as a modern single-page application (SPA) with a React frontend and Express.js backend, designed to showcase event information, handle registrations, and provide an engaging user experience for participants.
+This is a full-stack web application for the Crisalys Literary Symposium 2024, a literary event hosted by St. Joseph's College. The platform serves as a comprehensive registration and information system for various literary competitions including dramatics, debates, verbal correlations, and other creative events.
 
 ## User Preferences
 
@@ -10,83 +10,101 @@ Preferred communication style: Simple, everyday language.
 
 ## System Architecture
 
-The application follows a modern full-stack architecture using a monorepo structure with separate client and server directories. It employs a RESTful API design pattern with a React-based frontend and Express.js backend, all written in TypeScript for type safety and better development experience.
-
-### Architecture Decisions:
-
-1. **Monorepo Structure**: Chosen to keep related frontend and backend code in a single repository for easier development and deployment
-2. **TypeScript Throughout**: Provides type safety and better developer experience across the entire stack
-3. **React SPA**: Single-page application for smooth user experience and modern web standards
-4. **Express.js Backend**: Lightweight and flexible server framework suitable for REST APIs
-5. **PostgreSQL with Drizzle ORM**: Robust database solution with type-safe database operations
-
-## Key Components
+The application follows a modern full-stack architecture with clear separation between frontend and backend components:
 
 ### Frontend Architecture
 - **Framework**: React 18 with TypeScript
-- **Routing**: Wouter for lightweight client-side routing
-- **UI Library**: Shadcn/ui components built on Radix UI primitives
-- **Styling**: Tailwind CSS with custom design system
-- **State Management**: TanStack Query for server state management
-- **Build Tool**: Vite for fast development and optimized builds
+- **Styling**: Tailwind CSS with custom theming (navy and gold color scheme)
+- **UI Components**: Radix UI primitives with shadcn/ui component library
+- **Routing**: Wouter for client-side routing
+- **State Management**: TanStack Query (React Query) for server state management
+- **Form Handling**: React Hook Form with Zod validation
+- **Build Tool**: Vite for development and production builds
 
 ### Backend Architecture
-- **Framework**: Express.js with TypeScript
+- **Runtime**: Node.js with Express.js framework
+- **Language**: TypeScript with ES modules
 - **Database**: PostgreSQL with Drizzle ORM
-- **Session Management**: PostgreSQL-based session storage using connect-pg-simple
-- **API Design**: RESTful endpoints with /api prefix
-- **Error Handling**: Centralized error handling middleware
+- **Database Provider**: Neon Database (serverless PostgreSQL)
+- **File Uploads**: Multer middleware for handling multipart/form-data
+- **Session Management**: Built-in memory storage (development) with PostgreSQL session store support
 
-### Database Layer
-- **ORM**: Drizzle ORM for type-safe database operations
-- **Database**: PostgreSQL (configured for Neon serverless)
-- **Schema**: Shared schema definitions between client and server
-- **Migrations**: Drizzle Kit for database migrations
+## Key Components
+
+### Data Models
+- **Users**: Basic user authentication system
+- **Registrations**: Event registration with support for individual and team participation
+- **Contact Messages**: Contact form submissions
+- **Events**: Literary competition information and rules
+
+### Frontend Components
+- **Navigation**: Fixed header with smooth scrolling navigation
+- **Hero Section**: Event branding with date, venue, and call-to-action
+- **Events Section**: Filterable event cards with expandable rules
+- **Schedule Section**: Two-day event timeline
+- **Registration Section**: Multi-step form with file upload capability
+- **Contact Section**: Contact form with venue information
+
+### Backend Routes
+- **POST /api/registrations**: Handle event registrations with file uploads
+- **POST /api/contact**: Process contact form submissions
+- **File Upload**: Support for college ID verification (JPEG, PNG, PDF)
 
 ## Data Flow
 
-1. **Client Requests**: React components make API calls using TanStack Query
-2. **API Layer**: Express.js handles incoming requests and routes them to appropriate handlers
-3. **Business Logic**: Server-side logic processes requests and interacts with the database
-4. **Database Operations**: Drizzle ORM handles database queries and transactions
-5. **Response**: Data flows back through the API to the client components
-6. **UI Updates**: React components re-render based on updated state from TanStack Query
+1. **User Registration Flow**:
+   - User fills registration form with personal details
+   - Selects individual or team participation mode
+   - Chooses events from available competitions
+   - Uploads college ID for verification
+   - Form validation using Zod schemas
+   - Data stored in PostgreSQL via Drizzle ORM
+
+2. **Event Information Flow**:
+   - Static event data with rules and schedules
+   - Filterable event display by category
+   - Smooth navigation between sections
+
+3. **Contact Flow**:
+   - Contact form submission
+   - Server-side validation
+   - Storage in database for administrative review
 
 ## External Dependencies
 
-### Core Framework Dependencies
-- **React Ecosystem**: React, React DOM, React Hook Form with Zod validation
-- **UI Components**: Comprehensive Radix UI component library for accessibility
-- **Database**: Neon serverless PostgreSQL with Drizzle ORM
-- **Development Tools**: Vite, TypeScript, ESBuild for build processes
+### Database & Storage
+- **Neon Database**: Serverless PostgreSQL hosting
+- **Drizzle ORM**: Type-safe database operations
+- **File System**: Local file storage for uploads (development)
 
-### Styling and Design
-- **Tailwind CSS**: Utility-first CSS framework with custom design tokens
-- **Custom Theme**: Dark theme with blue and accent color scheme
-- **Font Integration**: Inter and Poppins fonts from Google Fonts
-- **Icons**: Font Awesome and Lucide React icons
+### UI & Styling
+- **Tailwind CSS**: Utility-first CSS framework
+- **Radix UI**: Accessible UI primitives
+- **Lucide React**: Icon library
+- **Google Fonts**: Custom typography (Playfair Display)
 
-### Utility Libraries
-- **Date Handling**: date-fns for date manipulation
-- **Class Management**: clsx and class-variance-authority for conditional styling
-- **Carousel**: Embla Carousel for image/content carousels
+### Development Tools
+- **Vite**: Development server and build tool
+- **TSX**: TypeScript execution for development
+- **ESBuild**: Production bundling
 
 ## Deployment Strategy
 
-### Development Environment
-- **Local Development**: Vite dev server for frontend, tsx for backend hot-reload
-- **Database**: Environment variable-based configuration for database connection
-- **Build Process**: Separate build steps for client (Vite) and server (ESBuild)
+### Development
+- Vite development server for frontend
+- TSX for backend development with hot reload
+- In-memory storage for rapid development iteration
 
-### Production Deployment
-- **Build Output**: Client builds to `dist/public`, server bundles to `dist/index.js`
-- **Static Assets**: Vite handles client-side asset optimization and bundling
-- **Server**: Node.js production server serving both API and static files
-- **Database**: PostgreSQL with connection pooling via Neon serverless
+### Production
+- **Frontend**: Static build deployed via Vite
+- **Backend**: Node.js server with ESBuild bundling
+- **Database**: Neon PostgreSQL with connection pooling
+- **File Storage**: Server filesystem (can be extended to cloud storage)
 
-### Environment Configuration
-- **Database URL**: Required environment variable for PostgreSQL connection
-- **Session Storage**: PostgreSQL-based session management for scalability
-- **Asset Handling**: Vite's asset pipeline for optimized static file serving
+### Build Process
+1. Frontend assets built to `dist/public`
+2. Backend TypeScript compiled and bundled to `dist/index.js`
+3. Database migrations applied via Drizzle Kit
+4. Static file serving integrated with Express
 
-The application is designed to be easily deployable to platforms like Replit, with automatic database provisioning and environment setup. The build process creates optimized bundles for both client and server, ensuring fast loading times and efficient resource usage.
+The architecture prioritizes developer experience with TypeScript throughout, modern React patterns, and a scalable database design that can handle event registrations efficiently.
