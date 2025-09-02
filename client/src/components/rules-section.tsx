@@ -71,7 +71,7 @@ export default function RulesSection() {
 
             <div className="text-center">
               <a
-                href="https://forms.gle/phrpYKGMDhmKu3xXA"
+                href="https://forms.gle/W15XosJ5qzrWvwKG8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors transform hover:scale-105"
@@ -163,7 +163,13 @@ export default function RulesSection() {
     </div>
   </div>
 
+  <hr className="border-slate-600 my-6" />
 
+  <div className="flex items-center justify-center space-x-3">
+    <div className="bg-cyan-300 text-white rounded-full p-3">
+      📧
+    </div>
+  </div>
 </div>
 
         </div>
