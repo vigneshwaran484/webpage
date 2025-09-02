@@ -130,15 +130,15 @@ export default function RulesSection() {
             </div>
           </div>
           {/* Contact Details Section */}
-<div className="mt-12 bg-slate-700 p-8 rounded-xl border border-slate-600">
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+
    <div className="flex items-center mb-6">
     <div className="bg-cyan-300 text-white rounded-full p-3 mr-3">
       📞
     </div>
-    <h3 className="font-display font-semibold text-2xl text-white">Coordinators</h3>
+    <h3 className="font-display font-semibold text-2xl text-white">Organisers</h3>
   </div>
-  
+  <div className="mt-12 bg-slate-700 p-8 rounded-xl border border-slate-600">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
     <div className="bg-slate-800 p-4 rounded-lg">
       <p className="text-white font-semibold">Mr. S. Shakunth</p>
       <a href="tel:7871452052" className="text-cyan-400 hover:underline">7871452052</a>
