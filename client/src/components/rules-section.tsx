@@ -167,13 +167,7 @@ export default function RulesSection() {
     </div>
   </div>
 
-  <hr className="border-slate-600 my-6" />
 
-  <div className="flex items-center justify-center space-x-3">
-    <div className="bg-cyan-300 text-white rounded-full p-3">
-      📧
-    </div>
-  </div>
 </div>
 
         </div>
