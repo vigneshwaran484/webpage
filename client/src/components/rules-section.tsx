@@ -50,14 +50,14 @@ export default function RulesSection() {
             <div className="text-center">
               <p className="text-xl text-cyan-300 mb-1">Registration Closing</p>
               <p className="text-3xl font-bold text-white">
-                <span className="text-cyan-400">10-09-2025</span>
+                <span className="text-cyan-400">11-09-2025</span>
               </p>
             </div>
 
             <div className="text-center">
               <p className="text-xl text-cyan-300 mb-1">Confirmation mail sent to participant</p>
               <p className="text-3xl font-bold text-white">
-                <span className="text-cyan-400">11-09-2025</span>
+                <span className="text-cyan-400">12-09-2025</span>
               </p>
               <p className="text-sm text-cyan-200 mt-1">(Only through e-mail)</p>
             </div>
@@ -65,13 +65,13 @@ export default function RulesSection() {
             <div className="text-center">
               <p className="text-lg text-blue-100 mb-2">Event Date:</p>
               <p className="font-display font-bold text-3xl text-white">
-                Wednesday, 13th SEPTEMBER 2025
+                Saturday, 13th SEPTEMBER 2025
               </p>
             </div>
 
             <div className="text-center">
               <a
-                href="https://forms.gle/W15XosJ5qzrWvwKG8"
+                href="https://forms.gle/phrpYKGMDhmKu3xXA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors transform hover:scale-105"
