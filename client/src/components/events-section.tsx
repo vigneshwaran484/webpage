@@ -164,7 +164,7 @@ export default function EventsSection() {
             </div>
 
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeFjH_rRLzK-g5CYWAkTOpqW0UqvCGJlbV6WyuPJtyaj43BNA/viewform"
+              href="https://forms.gle/phrpYKGMDhmKu3xXA"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-auto inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg text-lg hover:bg-gray-100 transition-colors hover:shadow-lg text-center"
